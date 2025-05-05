@@ -1,17 +1,5 @@
 [
     {
-        "name": "bkcrack",
-        "description": "Crack legacy zip encryption with Biham and Kocher's known plaintext attack.",
-        "website":"https://github.com/kimci86/bkcrack",
-        "tags":[""]
-    },
-     {
-        "name": "porch pirate",
-        "description": "Find API endpoints and secrets committed on Postman.",
-        "website":"https://github.com/MandConsultingGroup/porch-pirate",
-        "tags":["OSINT, Postman"]
-    },
-    {
         "name": "noir",
         "description": "Attack surface detector that identifies endpoints by static analysis.",
         "website":"https://github.com/owasp-noir/noir",
@@ -21,41 +9,41 @@
         "name": "nowafpls",
         "description": "Burp Plugin to Bypass WAFs through the insertion of Junk Data.",
         "website":"https://github.com/assetnote/nowafpls",
-        "tags":["Plugin, WAF"]
+        "tags":["burp"]
     },
     {
         "name": "shodanx",
         "description": "ShodanX is a tool to gather information of targets using shodan dorks.",
         "website":"https://github.com/RevoltSecurities/ShodanX",
-        "tags":["OSINT,shodan-dorks"]
+        "tags":["osint"]
     },
      {
         
         "name": "dummy",
         "description": "Generator of static files(csv, jpeg, png, pdf) for testing file upload.",
         "website":"https://github.com/sterrasec/dummy",
-        "tags":["image-generation"]
+        "tags":["file-upload"]
     },
     {
         
         "name": "CloudRecon",
         "description": "Finding assets from certificates",
         "website":"https://github.com/g0ldencybersec/CloudRecon",
-        "tags":["cloud, ip-scan"]
+        "tags":["osint"]
     },
     {
         
         "name": "chronos",
         "description": "Wayback Machine OSINT Framework",
         "website":"https://github.com/mhmdiaa/chronos",
-        "tags":["Wayback,OSINT"]
+        "tags":["osint"]
     },
     {
         
         "name": "d3coder",
         "description": "Chrome extension for encoding/decoding and hashing text on websites",
         "website":"https://github.com/izzy/d3coder",
-        "tags":["extension, encoding, decoding"]
+        "tags":["extension"]
     },
     {
         
@@ -69,28 +57,21 @@
         "name": "ReconAIzer",
         "description": "Add CHATGPT on Burp and help you with your Bug Bounty recon to discover endpoints, params, URLs, subdomains etc",
         "website":"https://github.com/hisxo/ReconAIzer",
-        "tags":["burp-plugin"]
+        "tags":["burp"]
     },
     {
         
         "name": "uro",
         "description": "declutters url lists for crawling/pentesting",
         "website":"https://github.com/s0md3v/uro",
-        "tags":[""]
-    },
-    {
-        
-        "name": "sonarqube",
-        "description": "Static code analysis for 20 languages and frameworks",
-        "website":"https://www.sonarsource.com/products/sonarqube/downloads/",
-        "tags":["code-analysis"]
+        "tags":["tool"]
     },
     {
         
         "name": "ghauri",
         "description": "An tool that automates the process of detecting and exploiting SQL injection",
         "website":"https://github.com/r0oth3x49/ghauri",
-        "tags":["sql-injection"]
+        "tags":["sql"]
     },
     {
         
@@ -102,23 +83,23 @@
     {
         
         "name": "stunner",
-        "description": "Stunner is a tool to test and exploit STUN, TURN and TURN over TCP servers",
+        "description": "Stunner is a tool to test and exploit STUN, TURN and TURN over TCP servers. TURN is a protocol mostly used in videoconferencing and audio chats (WebRTC).",
         "website":"https://github.com/firefart/stunner",
-        "tags":["WebRTC"]
+        "tags":["tool"]
     },
     {
         
         "name": "swaks",
         "description": "Swiss Army Knife for SMTP",
         "website":"https://github.com/jetmore/swaks",
-        "tags":["SMTP"]
+        "tags":["tool"]
     },
     {
         
         "name": "weevely3",
         "description": "Weaponized web shell",
         "website":"https://github.com/epinna/weevely3",
-        "tags":["webshell"]
+        "tags":["tool"]
     },
     {
         
@@ -167,21 +148,14 @@
         "name": "awesome-hacker-search-engines",
         "description": "A curated list of awesome search engines for bug hunters",
         "website":"https://github.com/edoardottt/awesome-hacker-search-engines",
-        "tags":["OSINT"]
-    },
-    {
-        
-        "name": "linWinPwn",
-        "description": "A bash script that streamlines the use of a number of Active Directory tools",
-        "website":"https://github.com/lefayjey/linWinPwn",
-        "tags":["active-directory"]
+        "tags":["osint"]
     },
     {
         
         "name": "jsoncrack",
         "description": "Visualize JSON into interactive graphs",
         "website":"https://jsoncrack.com",
-        "tags":["json"]
+        "tags":["tool"]
     },
     {
         
@@ -195,7 +169,7 @@
         "name": "awseye",
         "description": "Discover known and exposed AWS resources.",
         "website":"https://awseye.com",
-        "tags":["OSINT"]
+        "tags":["osint"]
     },
     {
         
@@ -209,6 +183,6 @@
         "name": "URL validation bypass",
         "description": "This cheat sheet contains payloads for bypassing URL validation. These wordlists are useful for attacks such as SSRF, CORS etc.",
         "website":"https://portswigger.net/web-security/ssrf/url-validation-bypass-cheat-sheet",
-        "tags":["bypass"]
+        "tags":["cheat-sheet"]
     }
 ]
