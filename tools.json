@@ -22,7 +22,7 @@
         "name": "dummy",
         "description": "Generator of static files(csv, jpeg, png, pdf) for testing file upload.",
         "website":"https://github.com/sterrasec/dummy",
-        "tags":["file-upload"]
+        "tags":["file-upload","vuln"]
     },
     {
         
@@ -71,7 +71,7 @@
         "name": "ghauri",
         "description": "An tool that automates the process of detecting and exploiting SQL injection",
         "website":"https://github.com/r0oth3x49/ghauri",
-        "tags":["sql"]
+        "tags":["sql","vuln"]
     },
     {
         
@@ -113,14 +113,14 @@
         "name": "XSStrike",
         "description": "Most advanced XSS scanner",
         "website":"https://github.com/s0md3v/XSStrike",
-        "tags":["xss"]
+        "tags":["xss","vuln"]
     },
     {
         
         "name": "Upload_Bypass",
         "description": "A simple tool for bypassing file upload restrictions",
         "website":"https://github.com/sAjibuu/Upload_Bypass",
-        "tags":["file-upload"]
+        "tags":["file-upload","vuln"]
     },
     {
         
@@ -134,7 +134,7 @@
         "name": "XSS-Bypass-Filters",
         "description": "XSS Filters Bypass Tips & Tricks",
         "website":"https://github.com/Edr4/XSS-Bypass-Filters",
-        "tags":["xss"]
+        "tags":["xss","vuln"]
     },
     {
         
@@ -176,7 +176,7 @@
         "name": "NoSQLMap",
         "description": "Automated NoSQL database enumeration and web application exploitation tool.",
         "website":"https://github.com/codingo/NoSQLMap",
-        "tags":["nosql"]
+        "tags":["nosql","vuln"]
     },
     {
         
@@ -191,5 +191,13 @@
         "description": "See SSL certificates as they're issued in real time.",
         "website":"https://certstream.calidog.io/",
         "tags":["osint"]
+    }
+    ,
+    {
+        
+        "name": "clickjacker",
+        "description": "Test for Clickjacking vulnerability.",
+        "website":"https://clickjacker.io/",
+        "tags":["Clickjacking","vuln"]
     }
 ]
