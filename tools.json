@@ -1,21 +1,16 @@
 [
-    {
-        "name": "noir",
-        "description": "Attack surface detector that identifies endpoints by static analysis.",
-        "website":"https://github.com/owasp-noir/noir",
-        "tags":["static-analysis"]
-    },
+    
     {
         "name": "nowafpls",
         "description": "Burp Plugin to Bypass WAFs through the insertion of Junk Data.",
         "website":"https://github.com/assetnote/nowafpls",
-        "tags":["burp"]
+        "tags":["burp-plugin"]
     },
     {
         "name": "shodanx",
         "description": "ShodanX is a tool to gather information of targets using shodan dorks.",
         "website":"https://github.com/RevoltSecurities/ShodanX",
-        "tags":["osint"]
+        "tags":["recon"]
     },
      {
         
@@ -26,17 +21,10 @@
     },
     {
         
-        "name": "CloudRecon",
-        "description": "Finding assets from certificates",
-        "website":"https://github.com/g0ldencybersec/CloudRecon",
-        "tags":["osint"]
-    },
-    {
-        
         "name": "chronos",
         "description": "Wayback Machine OSINT Framework",
         "website":"https://github.com/mhmdiaa/chronos",
-        "tags":["osint"]
+        "tags":["recon"]
     },
     {
         
@@ -51,13 +39,6 @@
         "description": "A browser extension for Penetration Testing",
         "website":"https://github.com/0140454/hackbar",
         "tags":["extension"]
-    },
-    {
-        
-        "name": "ReconAIzer",
-        "description": "Add CHATGPT on Burp and help you with your Bug Bounty recon to discover endpoints, params, URLs, subdomains etc",
-        "website":"https://github.com/hisxo/ReconAIzer",
-        "tags":["burp"]
     },
     {
         
@@ -82,17 +63,10 @@
     },
     {
         
-        "name": "stunner",
-        "description": "Stunner is a tool to test and exploit STUN, TURN and TURN over TCP servers. TURN is a protocol mostly used in videoconferencing and audio chats (WebRTC).",
-        "website":"https://github.com/firefart/stunner",
-        "tags":["tool"]
-    },
-    {
-        
         "name": "swaks",
         "description": "Swiss Army Knife for SMTP",
         "website":"https://github.com/jetmore/swaks",
-        "tags":["tool"]
+        "tags":["smtp","tool"]
     },
     {
         
@@ -117,20 +91,6 @@
     },
     {
         
-        "name": "Upload_Bypass",
-        "description": "A simple tool for bypassing file upload restrictions",
-        "website":"https://github.com/sAjibuu/Upload_Bypass",
-        "tags":["file-upload","vuln"]
-    },
-    {
-        
-        "name": "offat",
-        "description": "The OWASP OFFAT tool autonomously assesses your API for prevalent vulnerabilities",
-        "website":"https://github.com/owasp-offat/offat",
-        "tags":["api"]
-    },
-    {
-        
         "name": "XSS-Bypass-Filters",
         "description": "XSS Filters Bypass Tips & Tricks",
         "website":"https://github.com/Edr4/XSS-Bypass-Filters",
@@ -148,14 +108,7 @@
         "name": "awesome-hacker-search-engines",
         "description": "A curated list of awesome search engines for bug hunters",
         "website":"https://github.com/edoardottt/awesome-hacker-search-engines",
-        "tags":["osint"]
-    },
-    {
-        
-        "name": "jsoncrack",
-        "description": "Visualize JSON into interactive graphs",
-        "website":"https://jsoncrack.com",
-        "tags":["tool"]
+        "tags":["recon"]
     },
     {
         
@@ -169,7 +122,7 @@
         "name": "awseye",
         "description": "Discover known and exposed AWS resources.",
         "website":"https://awseye.com",
-        "tags":["osint"]
+        "tags":["recon"]
     },
     {
         
@@ -190,7 +143,7 @@
         "name": "certstream",
         "description": "See SSL certificates as they're issued in real time.",
         "website":"https://certstream.calidog.io/",
-        "tags":["osint"]
+        "tags":["recon"]
     }
     ,
     {
