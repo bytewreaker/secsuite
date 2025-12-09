@@ -115,7 +115,7 @@
         "name": "misconfig-mapper",
         "description": "Misconfig Mapper is a fast tool to help you uncover security misconfigurations on popular third-party services.",
         "website":"https://github.com/intigriti/misconfig-mapper",
-        "tags":["misconfig"]
+        "tags":["vuln"]
     },
     {
         
@@ -152,5 +152,12 @@
         "description": "Test for Clickjacking vulnerability.",
         "website":"https://clickjacker.io/",
         "tags":["Clickjacking","vuln"]
+    },
+    {
+        
+        "name": "Metis",
+        "description": "Metis is an open-source, AI-driven tool for deep security code review.",
+        "website":"https://github.com/arm/metis",
+        "tags":["vuln"]
     }
 ]
