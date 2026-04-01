@@ -1,4 +1,5 @@
 let TOOLS = [];
+let activeTags = new Set();
 
 // Load tools once
 async function loadTools() {
@@ -64,12 +65,16 @@ async function handleSearch(value) {
 // Tag click (event delegation)
 document.addEventListener('click', e => {
     if (e.target.classList.contains('tag-badge')) {
-        const tag = e.target.dataset.tag;
-        const input = document.getElementById('searchInput');
-        input.value = tag;
-        handleSearch(tag);
-        input.focus();
+    const tag = e.target.dataset.tag;
+
+    if (activeTags.has(tag)) {
+        activeTags.delete(tag);
+    } else {
+        activeTags.add(tag);
     }
+
+    applyFilters();
+}
 });
 
 // Clear with ESC
@@ -77,7 +82,10 @@ document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
         const input = document.getElementById('searchInput');
         input.value = '';
-        handleSearch('');
+
+        activeTags.clear();
+        applyFilters();
+
         input.focus();
     }
 });
@@ -92,7 +100,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderTagCloud(TOOLS);
 
     input.addEventListener('input', e =>
-        handleSearch(e.target.value.trim())
+        applyFilters()
     );
 });
 function getTagCounts(tools) {
@@ -106,16 +114,40 @@ function getTagCounts(tools) {
 
     return counts;
 }
-function renderTagCloud(tools) {
+function renderTagCloud(tools, activeTags = new Set()) {
     const tagCloud = document.getElementById('tagCloud');
     const counts = getTagCounts(tools);
 
     const sortedTags = Object.keys(counts).sort();
 
     tagCloud.innerHTML = sortedTags.map(tag => `
-        <span class="tag-badge" data-tag="${tag}">
+        <span class="tag-badge ${activeTags.has(tag) ? 'active' : ''}" data-tag="${tag}">
             ${tag}
             <span class="tag-count">(${counts[tag]})</span>
         </span>
     `).join(' ');
+}
+function applyFilters() {
+    const input = document.getElementById('searchInput');
+    const query = input.value.trim().toLowerCase();
+
+    let filtered = TOOLS;
+
+    // text search
+    if (query) {
+        filtered = filtered.filter(tool =>
+            tool.name.toLowerCase().includes(query) ||
+            tool.tags.some(tag => tag.includes(query))
+        );
+    }
+
+    // tag filtering (AND logic)
+    if (activeTags.size > 0) {
+        filtered = filtered.filter(tool =>
+            [...activeTags].every(tag => tool.tags.includes(tag))
+        );
+    }
+
+    renderTable(filtered);
+    renderTagCloud(filtered, activeTags);
 }

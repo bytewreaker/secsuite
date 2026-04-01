@@ -58,3 +58,7 @@ table a:hover {
     margin-left: 4px;
     color: #bbb;
 }
+.tag-badge.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
