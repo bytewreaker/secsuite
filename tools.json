@@ -6,21 +6,15 @@
     "tags": ["burp-plugin"]
   },
   {
-    "name": "shodanx",
-    "description": "ShodanX is a tool to gather information of targets using shodan dorks.",
-    "website": "https://github.com/RevoltSecurities/ShodanX",
-    "tags": ["recon"]
-  },
-  {
     "name": "dummy",
     "description": "Generator of static files(csv, jpeg, png, pdf) for testing file upload.",
     "website": "https://github.com/sterrasec/dummy",
     "tags": ["file-upload", "vuln"]
   },
   {
-    "name": "chronos",
-    "description": "Wayback Machine OSINT Framework",
-    "website": "https://github.com/mhmdiaa/chronos",
+    "name": "waymore",
+    "description": "Find way more from the Wayback Machine, Common Crawl, Alien Vault OTX, URLScan and more.",
+    "website": "https://github.com/xnl-h4ck3r/waymore",
     "tags": ["recon"]
   },
   {
@@ -36,46 +30,16 @@
     "tags": ["extension"]
   },
   {
-    "name": "uro",
-    "description": "Declutters URL lists for crawling and pentesting",
-    "website": "https://github.com/s0md3v/uro",
+    "name": "urless",
+    "description": "De-clutter a list of URLs",
+    "website": "https://github.com/xnl-h4ck3r/urless",
     "tags": ["recon"]
-  },
-  {
-    "name": "ghauri",
-    "description": "Automates the process of detecting and exploiting SQL injection",
-    "website": "https://github.com/r0oth3x49/ghauri",
-    "tags": ["sql", "vuln"]
   },
   {
     "name": "debugHunter",
     "description": "Discover hidden debugging parameters and uncover web application secrets",
     "website": "https://github.com/devploit/debugHunter",
     "tags": ["extension"]
-  },
-  {
-    "name": "swaks",
-    "description": "Swiss Army Knife for SMTP",
-    "website": "https://github.com/jetmore/swaks",
-    "tags": ["smtp", "cli"]
-  },
-  {
-    "name": "weevely3",
-    "description": "Weaponized web shell",
-    "website": "https://github.com/epinna/weevely3",
-    "tags": ["exploit"]
-  },
-  {
-    "name": "probable_subdomains",
-    "description": "Subdomains analysis and generation tool",
-    "website": "https://github.com/zzzteph/probable_subdomains",
-    "tags": ["wordlist", "recon"]
-  },
-  {
-    "name": "XSStrike",
-    "description": "Most advanced XSS scanner",
-    "website": "https://github.com/s0md3v/XSStrike",
-    "tags": ["xss", "vuln"]
   },
   {
     "name": "S3BucketList",
@@ -111,7 +75,7 @@
     "name": "URL validation bypass",
     "description": "Cheat sheet for bypassing URL validation (SSRF, CORS, etc.)",
     "website": "https://portswigger.net/web-security/ssrf/url-validation-bypass-cheat-sheet",
-    "tags": ["cheat-sheet", "ssrf"]
+    "tags": ["cheat-sheet"]
   },
   {
     "name": "leakradar",
@@ -130,5 +94,11 @@
     "description": "AI-driven tool for deep security code review",
     "website": "https://github.com/arm/metis",
     "tags": ["vuln"]
+  },
+  {
+    "name": "Process Monitor",
+    "description": "An monitoring tool for Windows that shows real-time file system, Registry, and process activity.",
+    "website": "https://learn.microsoft.com/en-us/sysinternals/downloads/procmon",
+    "tags": ["forensics"]
   }
 ]
