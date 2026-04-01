@@ -48,3 +48,13 @@ table a:hover {
 .tag-badge:hover {
     background-color: #6c757d;
 }
+#tagCloud {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tag-count {
+    font-size: 0.65rem;
+    margin-left: 4px;
+    color: #bbb;
+}

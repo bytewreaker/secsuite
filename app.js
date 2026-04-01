@@ -89,8 +89,33 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     await loadTools();
     renderTable(TOOLS);
+    renderTagCloud(TOOLS);
 
     input.addEventListener('input', e =>
         handleSearch(e.target.value.trim())
     );
 });
+function getTagCounts(tools) {
+    const counts = {};
+
+    tools.forEach(tool => {
+        tool.tags.forEach(tag => {
+            counts[tag] = (counts[tag] || 0) + 1;
+        });
+    });
+
+    return counts;
+}
+function renderTagCloud(tools) {
+    const tagCloud = document.getElementById('tagCloud');
+    const counts = getTagCounts(tools);
+
+    const sortedTags = Object.keys(counts).sort();
+
+    tagCloud.innerHTML = sortedTags.map(tag => `
+        <span class="tag-badge" data-tag="${tag}">
+            ${tag}
+            <span class="tag-count">(${counts[tag]})</span>
+        </span>
+    `).join(' ');
+}
