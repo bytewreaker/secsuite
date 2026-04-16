@@ -1,0 +1,64 @@
+body {
+    min-height: 100vh;
+    background-color: #121212;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Rubik Vinyl', sans-serif;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+.search-bar-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+table a {
+    color: #66b2ff;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+.tag-badge {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    margin: 0.15em;
+    font-size: 0.75rem;
+    background-color: #495057;
+    color: #f8f9fa;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.15s ease;
+}
+
+.tag-badge:hover {
+    background-color: #6c757d;
+}
+#tagCloud {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tag-count {
+    font-size: 0.65rem;
+    margin-left: 4px;
+    color: #bbb;
+}
+.tag-badge.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
